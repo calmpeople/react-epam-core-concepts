@@ -20,20 +20,18 @@ class Component1 extends Component {
             <h2 className='component-1'>Component 1</h2>
             <p>{`number:${this.state.number}`}</p>
             <p><button onClick={() => this.changeNumber(-1)}>Decrease -</button> <button onClick={() => this.changeNumber(1)}>Increase +</button></p>
+            <hr/>
         </div>
     )
   }
 }
 
 class Component2 extends PureComponent {
-  state = {
-
-  }
-
   render () {
     return (
         <div>
             <h2 className='component-2'>Component 2</h2>
+            <hr/>
         </div>
     )
   }
@@ -43,6 +41,7 @@ function TextFunction1() {
   return (
       <h2 className="text-function-2">
         Text Function 1
+          <hr/>
       </h2>
   );
 }
@@ -52,6 +51,7 @@ function Search() {
       <form action="">
           <input type="search"/>
           <button>Search</button>
+          <hr/>
       </form>
   );
 }
